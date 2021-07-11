@@ -1,0 +1,54 @@
+{
+    "name": "pbdp/timezones",
+    "description": "My awesome package",
+    "keywords": [
+        "pbdp",
+        "timezones"
+    ],
+    "homepage": "https://github.com/pbdp/timezones",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sasan Salamzadeh",
+            "email": "me@salamzadeh.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "7.*|8.49.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": ">=6.7.0",
+        "phpunit/phpunit": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laracon21\\Timezones\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PBDP\\Timezones\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PBDP\\Timezones\\TimezonesServiceProvider"
+            ],
+            "aliases": {
+                "Timezones": "PBDP\\Timezones\\TimezonesFacade"
+            }
+        }
+    }
+}
