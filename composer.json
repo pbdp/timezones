@@ -1,6 +1,6 @@
 {
     "name": "pbdp/timezones",
-    "description": "My awesome package",
+    "description": "Timezones for Laravel",
     "keywords": [
         "pbdp",
         "timezones"
@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Laracon21\\Timezones\\": "src"
+            "PBDP\\Timezones\\": "src"
         }
     },
     "autoload-dev": {
